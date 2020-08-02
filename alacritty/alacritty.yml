@@ -17,6 +17,8 @@ font:
 
   size: 8
 
+# Transparency
+background_opacity: 0.8
 
 # Colors (Gruvbox dark)
 colors:
