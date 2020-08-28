@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #32302f
+background = #B432302f
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #ebdbb2
@@ -34,7 +34,7 @@ height = 45
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 15
-fixed-center = false
+fixed-center = true
 bottom = true
 
 background = ${colors.background}
@@ -115,20 +115,20 @@ type = internal/bspwm
 label-focused = %index%
 label-focused-background = #458588
 label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 5
 
 label-occupied = %index%
 label-occupied-background = #689d6a
 label-occupied-underline = #d79921
-label-occupied-padding = 2
+label-occupied-padding = 5
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 5
 
 label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 5
 
 ; Separator in between workspaces
 ; label-separator = |

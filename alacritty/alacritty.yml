@@ -1,18 +1,18 @@
 font:
   normal:
-    family: Source Code Pro
+    family: Iosevka Light Extended
     style: Regular
 
   bold:
-    family: Source Code Pro
+    family: Iosevka Light Extended
     style: Bold
 
   italic:
-    family: Source Code Pro
+    family: Iosevka Light Extended
     style: Italic
 
   bold_italic:
-    family: Source Code Pro
+    family: Iosevka Light Extended
     style: Bold Italic
 
   size: 8
