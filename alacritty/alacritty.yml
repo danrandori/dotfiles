@@ -1,31 +1,37 @@
 font:
   normal:
-    family: Iosevka Light Extended
-    style: Regular
-
+    family: Iosevka
+    style: Extralight Extended
   bold:
-    family: Iosevka Light Extended
-    style: Bold
-
+    family: Iosevka
+    style: Medium Extended
   italic:
-    family: Iosevka Light Extended
-    style: Italic
+    family: Iosevka
+    style: Extralight Extended Oblique
 
-  bold_italic:
-    family: Iosevka Light Extended
-    style: Bold Italic
-
-  size: 8
+  size: 17.5
 
 # Transparency
 background_opacity: 0.8
+
+# Window
+window:
+  padding:
+      x: 5
+      y: 5
+  startup_mode: Fullscreen
+
+# Cursor
+cursor:
+  style:
+    blinking: Always
 
 # Colors (Gruvbox dark)
 colors:
   # Default colors
   primary:
     # hard contrast: background = '#1d2021'
-    background: '#3c3836'
+    background: '#282828'
     # soft contrast: background = '#32302f'
     foreground: '#ebdbb2'
 
