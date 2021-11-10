@@ -1,13 +1,13 @@
 font:
   normal:
-    family: Iosevka
-    style: Extralight Extended
+    family: Hasklug Nerd Font Mono
+    style: ExtraLight
   bold:
-    family: Iosevka
-    style: Medium Extended
+    family: Hasklug Nerd Font Mono
+    style: Regular
   italic:
-    family: Iosevka
-    style: Extralight Extended Italic
+    family: Hasklug Nerd Font Mono
+    style: ExtraLight Italic
 
   size: 18
 
