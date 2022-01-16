@@ -28,4 +28,8 @@ return {
 		top = 5,
 		bottom = 5,
 	},
+	initial_rows = 45,
+	initial_cols = 160,
+	native_macos_fullscreen_mode = true,
+	exit_behavior = "Close",
 }
