@@ -12,8 +12,8 @@ return {
 		ansi = {"#3b4252", "#bf616a", "#a3be8c", "#ebcb8b", "#81a1c1", "#b48ead", "#88c0d0", "#e5e9f0"},
 		brights = {"#465780", "#d06f79", "#b1d196", "#f0d399", "#8cafd2", "#c895bf", "#93ccdc", "#e7ecf4"},
 	},
-	font = wezterm.font("Hasklug Nerd Font Mono", { weight = "ExtraLight" }),
-	font_size = 18.5,
+	font = wezterm.font({ family = "Hasklug Nerd Font Mono", weight = "Light", harfbuzz_features = {"calt=0", "clig=0", "liga=0"} }),
+	font_size = 19,
 	window_close_confirmation = "NeverPrompt",
 	hide_tab_bar_if_only_one_tab = true,
 	keys = {
