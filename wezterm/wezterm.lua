@@ -16,7 +16,7 @@ return {
 	font_size = 19,
 	window_close_confirmation = "NeverPrompt",
 	hide_tab_bar_if_only_one_tab = true,
-	leader = { key = "o", mods = "CTRL", timeout_milliseconds = 1000 },
+	leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 },
 	keys = {
 		{ key = "f", mods = "SHIFT|CMD", action = "ToggleFullScreen" },
 		{ key = "t", mods = "SHIFT|CMD", action = wezterm.action{ SpawnTab = "CurrentPaneDomain" } },
