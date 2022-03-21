@@ -18,9 +18,9 @@ return {
 	hide_tab_bar_if_only_one_tab = true,
 	keys = {
 		{ key = "f", mods = "SHIFT|CMD", action = "ToggleFullScreen" },
-		{ key="t", mods="SHIFT|CMD", action = wezterm.action{ SpawnTab = "CurrentPaneDomain" }},
-		{ key="h", mods="SHIFT|CMD", action=wezterm.action{ SplitHorizontal={domain="CurrentPaneDomain"} } },
-		{ key="V", mods="SHIFT|CMD", action=wezterm.action{ SplitVertical={domain="CurrentPaneDomain"} } },
+		{ key = "t", mods = "SHIFT|CMD", action = wezterm.action{ SpawnTab = "CurrentPaneDomain" }},
+		{ key = "h", mods = "SHIFT|CMD", action = wezterm.action{ SplitHorizontal = {domain="CurrentPaneDomain"} } },
+		{ key = "V", mods = "SHIFT|CMD", action = wezterm.action{ SplitVertical = {domain="CurrentPaneDomain"} } },
 	},
 	window_padding = {
 		left = 5,
