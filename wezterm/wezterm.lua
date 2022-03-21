@@ -16,11 +16,16 @@ return {
 	font_size = 19,
 	window_close_confirmation = "NeverPrompt",
 	hide_tab_bar_if_only_one_tab = true,
+	leader = { key = "o", mods = "CTRL", timeout_milliseconds = 1000 },
 	keys = {
 		{ key = "f", mods = "SHIFT|CMD", action = "ToggleFullScreen" },
-		{ key = "t", mods = "SHIFT|CMD", action = wezterm.action{ SpawnTab = "CurrentPaneDomain" }},
+		{ key = "t", mods = "SHIFT|CMD", action = wezterm.action{ SpawnTab = "CurrentPaneDomain" } },
 		{ key = "h", mods = "SHIFT|CMD", action = wezterm.action{ SplitHorizontal = {domain="CurrentPaneDomain"} } },
 		{ key = "V", mods = "SHIFT|CMD", action = wezterm.action{ SplitVertical = {domain="CurrentPaneDomain"} } },
+		{ key = "h", mods = "LEADER", action = wezterm.action{ AdjustPaneSize = {"Left", 5} } },
+		{ key = "j", mods = "LEADER", action = wezterm.action{ AdjustPaneSize = {"Down", 5} } },
+		{ key = "k", mods = "LEADER", action = wezterm.action{ AdjustPaneSize = {"Up", 5} } },
+		{ key = "l", mods = "LEADER", action = wezterm.action{ AdjustPaneSize = {"Right", 5} } },
 	},
 	window_padding = {
 		left = 5,
