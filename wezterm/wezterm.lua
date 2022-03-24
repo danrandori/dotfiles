@@ -26,6 +26,10 @@ return {
 		{ key = "j", mods = "LEADER", action = wezterm.action{ AdjustPaneSize = {"Down", 5} } },
 		{ key = "k", mods = "LEADER", action = wezterm.action{ AdjustPaneSize = {"Up", 5} } },
 		{ key = "l", mods = "LEADER", action = wezterm.action{ AdjustPaneSize = {"Right", 5} } },
+		{ key = "LeftArrow", mods = "SHIFT|CMD", action = wezterm.action{ ActivatePaneDirection = "Left"} },
+		{ key = "RightArrow", mods = "SHIFT|CMD", action = wezterm.action{ ActivatePaneDirection = "Right"} },
+		{ key = "UpArrow", mods = "SHIFT|CMD", action = wezterm.action{ ActivatePaneDirection = "Up"} },
+		{ key = "DownArrow", mods = "SHIFT|CMD", action = wezterm.action{ ActivatePaneDirection= "Down"} },
 	},
 	window_padding = {
 		left = 5,
