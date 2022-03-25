@@ -1,4 +1,4 @@
-export PATH=$HOME/.cargo/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.0/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 export GOPATH=$HOME/Documents/go
 
 export bcda="cd $HOME/Documents/go/src/github.com/CMSgov/bcda-app"
@@ -57,4 +57,5 @@ function parse_git_dirty {
 }
 
 export PS1="\W \[\e[32m\]\`parse_git_branch\`\[\e[m\]-> "
-. "$HOME/.cargo/env"
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
