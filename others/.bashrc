@@ -1,5 +1,5 @@
-export PATH=$HOME/.cargo/bin:$PATH
-export GOPATH=$HOME/Documents/go
+export PATH=$HOME/.cargo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/llvm/bin:$PATH
+export GOPATH=$HOME/Documents/personal/go
 
 export bcda="cd $HOME/Documents/go/src/github.com/CMSgov/bcda-app"
 export ops="cd $HOME/Documents/go/src/github.com/CMSgov/bcda-ops"
@@ -7,6 +7,8 @@ export va="cd $HOME/Documents/go/src/github.com/VA/vsp-integration-experience"
 
 alias vim="nvim"
 alias vi="nvim"
+alias v="nvim"
+alias l="lazygit"
 alias python="python3"
 
 # get current branch in git repo
@@ -57,5 +59,3 @@ function parse_git_dirty {
 }
 
 export PS1="\W \[\e[32m\]\`parse_git_branch\`\[\e[m\]-> "
-
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
