@@ -1,19 +1,27 @@
 local wezterm = require 'wezterm';
 
 return {
-	-- colors = {
-	-- 	foreground = "#b9bfca",
-	-- 	background = "#2e3440",
-	-- 	cursor_bg = "#b9bfca",
-	-- 	cursor_border = "#b9bfca",
-	-- 	cursor_fg = "#2e3440",
-	-- 	selection_bg = "#3e4655",
-	-- 	selection_fg = "#b9bfca",
-	-- 	ansi = {"#3b4252", "#bf616a", "#a3be8c", "#ebcb8b", "#81a1c1", "#b48ead", "#88c0d0", "#e5e9f0"},
-	-- 	brights = {"#465780", "#d06f79", "#b1d196", "#f0d399", "#8cafd2", "#c895bf", "#93ccdc", "#e7ecf4"},
-	-- },
-	color_scheme = "nord",
-	font = wezterm.font({ family = "Hasklug Nerd Font Mono", weight = "Light", harfbuzz_features = {"calt=0", "clig=0", "liga=0"} }),
+	force_reverse_video_cursor = true,
+	colors = {
+		foreground = "#dcd7ba",
+		background = "#1f1f28",
+
+		cursor_bg = "#c8c093",
+		cursor_fg = "#c8c093",
+		cursor_border = "#c8c093",
+
+		selection_fg = "#c8c093",
+		selection_bg = "#2d4f67",
+
+		scrollbar_thumb = "#16161d",
+		split = "#16161d",
+
+		ansi = { "#090618", "#c34043", "#76946a", "#c0a36e", "#7e9cd8", "#957fb8", "#6a9589", "#c8c093" },
+		brights = { "#727169", "#e82424", "#98bb6c", "#e6c384", "#7fb4ca", "#938aa9", "#7aa89f", "#dcd7ba" },
+		indexed = { [16] = "#ffa066", [17] = "#ff5d62" },
+	},
+	-- color_scheme = "nord",
+	font = wezterm.font({ family = "Hasklug Nerd Font Mono", weight = "Light", freetype_render_target = "HorizontalLcd", harfbuzz_features = {"calt=0", "clig=0", "liga=0"} }),
 	font_size = 23,
 	window_close_confirmation = "NeverPrompt",
 	hide_tab_bar_if_only_one_tab = true,
@@ -42,5 +50,5 @@ return {
 	initial_cols = 160,
 	native_macos_fullscreen_mode = true,
 	exit_behavior = "Close",
-	max_fps = 120,
+	max_fps = 60,
 }
