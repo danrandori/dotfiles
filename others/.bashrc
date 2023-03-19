@@ -31,19 +31,16 @@
 # echo ""
 
 export PATH=$HOME/.cargo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/llvm/bin:$HOME/Documents/personal/go/bin:$HOME/Documents/personal/go/bin:/opt/homebrew/opt/node@14/bin:/opt/homebrew/opt/libpq/bin:$PATH
-export GOPATH=$HOME/Documents/salt/go/src/
+export GOPATH=$HOME/Documents/randori/go/src/
 
-export salt="cd $HOME/Documents/salt"
+export rand="cd $HOME/Documents/randori"
 export personal="cd $HOME/Documents/personal"
-
-export LDFLAGS="-L/opt/homebrew/opt/node@14/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@14/include"
 
 alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
 alias l="lazygit"
-# alias python="python3"
+alias ss="systemctl suspend"
 
 if command -v pyenv 1>/dev/null 2>&1; then
 	eval "$(pyenv init -)"
@@ -101,3 +98,7 @@ export PS1="\W \[\e[32m\]\`parse_git_branch\`\[\e[m\]-> "
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
