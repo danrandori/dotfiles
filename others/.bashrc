@@ -30,7 +30,7 @@
 # print_centered "  ███ ███  ███████ ███████  ██████  ██████  ██      ██ ███████     ██████  ██   ██ ██   ████ ██ "
 # echo ""
 
-export PATH=$HOME/.cargo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/go/bin:$HOME/Documents/randori/go/bin:$PATH
+export PATH=$HOME/.cargo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/llvm/bin:$HOME/Documents/randori/go/src/bin:/usr/local/go/bin:~/Documents/randori/python/skycrane/bin:$PATH
 export GOPATH=$HOME/Documents/randori/go/src/
 
 export rand="cd $HOME/Documents/randori"
@@ -87,11 +87,22 @@ function parse_git_dirty {
         bits="!${bits}"
     fi
     if [ ! "${bits}" == "" ]; then
-        sh_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+        echo " ${bits}"
+    else
+        echo ""
+    fi
+}
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/dchoi/Documents/randori/google-cloud-sdk/path.bash.inc' ]; then . '/home/dchoi/Documents/randori/google-cloud-sdk/path.bash.inc'; fi
+export PS1="\W \[\e[32m\]\`parse_git_branch\`\[\e[m\]-> "
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/dchoi/Documents/randori/google-cloud-sdk/completion.bash.inc' ]; then . '/home/dchoi/Documents/randori/google-cloud-sdk/completion.bash.inc'; fi
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=/home/dchoi/Documents/randori/python/skycrane/bin:$PATH
