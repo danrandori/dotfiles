@@ -30,7 +30,7 @@
 # print_centered "  ███ ███  ███████ ███████  ██████  ██████  ██      ██ ███████     ██████  ██   ██ ██   ████ ██ "
 # echo ""
 
-export PATH=$HOME/.cargo/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/llvm/bin:$HOME/Documents/randori/go/src/bin:/usr/local/go/bin:$PATH
+export PATH=$HOME/.cargo/bin:$HOME/Documents/randori/go/src/bin:/usr/local/go/bin:$PATH
 export GOPATH=$HOME/Documents/randori/go/src/
 
 export rand="cd $HOME/Documents/randori"
@@ -41,10 +41,6 @@ alias vi="nvim"
 alias v="nvim"
 alias l="lazygit"
 alias ss="systemctl suspend"
-
-if command -v pyenv 1>/dev/null 2>&1; then
-	eval "$(pyenv init -)"
-fi
 
 # get current branch in git repo
 function parse_git_branch() {
